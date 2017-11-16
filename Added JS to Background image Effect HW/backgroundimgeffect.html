@@ -1,0 +1,42 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	   <link href="style.css" rel="stylesheet" type="text/css" >
+		<script type="text/javascript" src="script.js"></script></head>
+	<body>
+	<h1> Background Image Effect</h1>
+	<h1>Description of the zoom Effect</h1> <br><br>
+	<h2>I chose the zoom trick for background images. First we specify the dimensions for the parent element. Then the child can fill the parent using width: 100% and height: 100%;, as well as set the background image, ensuring it scales to cover the area. To finish up the basic effect, we can add some transitions to our child element's normal state. We then add hover effects to our parent element which will affect our child element. </h2>
+	<div class="parent">
+	  <div class="child"></div>
+	  <div class="slideshow-container">
+	  <div class="mySlides fade">
+	    <div class="numbertext">1 / 3</div>
+	    <img src="img1.jpg" style="width:100%">
+	    <div class="text">Claire's on the right</div>
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">2 / 3</div>
+	    <img src="img2.jpg" style="width:100%">
+	    <div class="text">Brigid's in the middle</div>
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">3 / 3</div>
+	    <img src="img3.jpg" style="width:100%">
+	    <div class="text">Rileys on the left</div>
+	  </div>
+
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+	</body>
+	</html>
